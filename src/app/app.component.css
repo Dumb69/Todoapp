@@ -1,0 +1,131 @@
+
+
+.topnav{
+    border : 1px solid #a35709;
+    border-radius : 5px;
+    background-color: #1f1e1b;
+    color: #f0e3ca;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:0px;
+}
+
+.topnav h3 {
+    margin: 0px;
+}
+
+*{
+    /* background-color: #1b1a17; */
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #1b1a17;
+}
+.container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    gap:2px;
+    margin-bottom: 7rem;
+    height: 200px ;
+    background-color: black !important;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: space-around; */
+    gap:.5rem;
+    background-color: black !important;
+   
+}
+::ng-deep .inputbox{
+    width: auto;
+    /* max-width: 20em; */
+    /* border : 1px solid #a35709;
+    border-radius : 5px; */
+    border: none !important;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+::ng-deep mat-mdc-form-field {
+    border: none !important;
+}
+
+/* ::ng-deep .mat-h2, .mat-headline-6, .mat-typography .mat-h2, .mat-typography .mat-headline-6, .mat-typography h2  {
+    margin: 0;
+} */
+
+
+.taskbox{
+    border : 1px solid #a35709;
+    border-radius : 5px;
+    background-color: #1f1e1b;
+    color: #f0e3ca;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    gap:1rem;
+}
+.taskbox1{
+    border: 1px solid #a35709;
+    background-color: #1f1e1b;
+    border-radius: 5px;
+    color: #f0e3ca;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    padding-top: 3rem;
+    grid-gap: 3rem;
+    padding: 4rem 4rem;
+    grid-row-gap: 2rem;
+    margin-bottom: 10rem;
+    width: 90%;
+    margin: 0px auto;
+}
+.item-box {
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    border: 1px solid #a35709;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    border-radius: 10px;
+    
+  }
+  .emptybox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1e1b;
+  }
+  .taskid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .taskid .head h2,h6 {
+    margin:0
+  }
+
+  @media only screen and (max-width: 500px) {
+    .taskbox1 {
+        grid-template-columns: 1fr;
+        border: none;
+    }
+
+    .taskbox {
+        border: none;
+        min-height: 180px;
+    }
+
+    /* .topnav h3 {
+        margin: 0px;
+    } */
+  }
